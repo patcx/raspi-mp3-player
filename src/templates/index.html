@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Piano</title>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='style/piano.css') }}"/>
+    <script type="text/javascript" charset="utf-8" async="" src="{{ url_for('static',filename='js/button.js') }}"></script>
+</head>
+
+<body>
+    <div id="content">
+        <div id="content-inner">
+            <div id="piano">
+                <h1>Javascript Piano</h1>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static',filename='js/jquery-1.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/audio.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/piano.js') }}"></script>
+</body>
